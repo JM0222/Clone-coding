@@ -1,0 +1,49 @@
+body {
+    background: black;
+}
+.contents {width: 1180px; margin: 0 auto;}
+.h2 {font-size:36px; color: whitesmoke; line-height: 100%; position: relative;
+padding: 53px 0 53px; text-align: center; font-weight: normal;}
+.h2::after {
+    position: absolute; content: ""; left: 50%; bottom: 0;
+    width: 50px; height: 1px; background: #aaa;
+    transform: translateX(-50%); 
+}
+.step {
+    display: flex; border-top: 1px solid #aaa; 
+    border-bottom: 1px solid #aaa;
+}
+.step li {flex: 1; position: relative; font-size: 11px; color:whitesmoke;
+    list-style: none;
+text-align: center; line-height: 100%; padding:22px 0;}
+.step li:after {content: ""; position: absolute; right: 0; top:50%;
+transform: translate(-50%, -50%); width: 12px; height: 19px; 
+background: url("/images/icon.png") no-repeat -304px -58px;}
+.step li:last-child::after{
+    display: none;
+}
+.step li div {
+    font-size: 18px; color:#00ade8; padding: 8px 0 0;
+}
+.join_box1 { text-align: center; padding: 40px 0 0; box-sizing: border-box;
+    height: 402px; background:url("../images/sales_obj01.png") no-repeat 0 0,
+    url("../images/sales_obj03.png") no-repeat right bottom; 
+    background-color: #e4e8f1;
+    margin: 50px 0 32px;    
+}
+.join_box1 h3 {font-size: 24px; color:#222; position: relative;
+    background: url("../images/ico_main_util04.png") no-repeat center top; 
+    padding: 86px 0 37px; line-height: 100%;}
+.join_box1 h3:after {
+    position: absolute; content: ""; left: 50%; bottom: 0;
+    width: 50px; height: 2px; background: #222;
+    transform: translateX(-50%); 
+}
+.join_box1 p {padding: 37px 0 52px; font-size: 14px;
+color: #222;}
+.join_box1 a {
+    display: inline-block; width: 120px; height: 45px; text-align: center;
+    line-height: 45px; color:#fff; font-size: 13px;
+    background: #042e6f; text-decoration: none;
+}
+.noti {font-size: 14px; color:#888;}
